@@ -1,0 +1,26 @@
+<div class="col-md-6">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>brand</th>
+                <th>contactNo</th>
+                <th>customerName</th>
+                <th>email</th>
+                <th>item</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of orders">
+                <td>{{order.id}}</td>
+                <td>{{order.brand}}</td>
+                <td>{{order.contactNo}}</td>
+                <td>{{order.customerName}}</td>
+                <td>{{order.email}}</td>
+                <td>{{order.item}}</td>
+                <td><button class="btn btn-danger" (click)="deleteOrder(order)"> Delete Order</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,51 @@
+<div class="col-md-6">
+    <h2 class="text-center">Add Order</h2>
+    <form>
+        <div class="form-group">
+            <label for="brand">Brand:</label>
+            <input type="brand" [(ngModel)]="order.brand" placeholder="Brand" name="brand" class="form-control"
+                id="brand">
+        </div>
+
+        <div class="form-group">
+            <label for="contactNo">Contact No:</label>
+            <input [(ngModel)]="order.contactNo" placeholder="Contact No" name="contactNo" class="form-control"
+                id="contactNo">
+        </div>
+
+        <div class="form-group">
+            <label for="customerName">Customer Name:</label>
+            <input [(ngModel)]="order.customerName" placeholder="Customer Name" name="customerName" class="form-control"
+                id="customerName">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input [(ngModel)]="order.email" placeholder="Email" name="email" class="form-control" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="item">Item:</label>
+            <input [(ngModel)]="order.item" placeholder="Item" name="email" class="form-control" id="item">
+        </div>
+
+        <div class="form-group">
+            <label for="orderType">Order Type:</label>
+            <input [(ngModel)]="order.orderType" placeholder="Order Type" name="orderType" class="form-control"
+                id="orderType">
+        </div>
+
+
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input [(ngModel)]="order.price" placeholder="Price" name="price" class="form-control" id="price">
+        </div>
+
+        <div class="form-group">
+            <label for="qty">Qty:</label>
+            <input [(ngModel)]="order.qty" placeholder="Qty" name="qty" class="form-control" id="qty">
+        </div>
+
+        <button class="btn btn-success" (click)="createOrder()">Create</button>
+    </form>
+</div>
